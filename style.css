@@ -1,0 +1,156 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Body */
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  max-width: 900px;
+  padding: 20px;
+}
+
+/* Card */
+.card {
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Hidden */
+.hidden {
+  display: none;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Inputs */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 5px rgba(102,126,234,0.5);
+}
+
+/* Buttons */
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  background: #667eea;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a67d8;
+}
+
+/* Task Input Section */
+.task-input {
+  display: flex;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.task-input input {
+  flex: 1;
+}
+
+.task-input button {
+  width: auto;
+  padding: 12px 20px;
+}
+
+/* Tasks Layout */
+.tasks {
+  display: flex;
+  gap: 20px;
+}
+
+.tasks > div {
+  flex: 1;
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+/* Task List */
+ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+li {
+  background: #fff;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Completed Tasks */
+#completedTasks li {
+  text-decoration: line-through;
+  opacity: 0.7;
+}
+
+/* Buttons inside tasks */
+li button {
+  width: auto;
+  padding: 6px 10px;
+  font-size: 12px;
+  background: #48bb78;
+}
+
+li button:hover {
+  background: #38a169;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tasks {
+    flex-direction: column;
+  }
+
+  .task-input {
+    flex-direction: column;
+  }
+
+  .task-input button {
+    width: 100%;
+  }
+}
