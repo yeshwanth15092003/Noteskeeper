@@ -1,56 +1,42 @@
-# 🗒️ Notes Keeper App
+# ✅ To-Do List Web Application
 
-A lightweight and user-friendly Notes Keeper web application that allows users to create, save, edit, delete, and search personal notes efficiently. The app is designed with a clean interface and smooth user experience for managing daily notes and ideas.
+## 📌 Project Overview
+The **To-Do List Web Application** is a simple and user-friendly task management system developed using HTML, CSS, and JavaScript. The application helps users organize daily activities by allowing them to create, edit, complete, and delete tasks efficiently.
 
----
-
-## 🚀 Objective
-
-The goal of this project is to build a simple notes management system where users can securely store and organize their personal notes.
-
----
-
-# ✨ Features
-
-## 1. 🔐 User Login
-- Simple user authentication
-- Basic user profile management
-- Secure login/logout functionality
-
-## 2. 📝 Create Notes
-- Add notes with title and content
-- Save notes instantly
-- Easy-to-use note editor
-
-## 3. 📂 Manage Notes
-- Edit existing notes
-- Delete unwanted notes
-- Auto-update changes in real time
-
-## 4. 🔍 View & Search
-- Display all saved notes
-- Search notes by keywords
-- Fast and responsive filtering
+The system also includes:
+- User authentication
+- Secure password validation
+- Persistent task storage using LocalStorage
+- Responsive UI design
 
 ---
 
-## 🛠️ Technologies Used
+# 🚀 Features
 
-- HTML5
-- CSS3
-- JavaScript
-- Local Storage / Database
-- Bootstrap / Tailwind CSS (Optional)
+## 🔐 User Authentication
+Users can:
+- Sign Up
+- Login
+- Logout
+
+Features include:
+- Username validation
+- Secure password rules
+- Auto-login support using LocalStorage
+
+Implemented in: `app.js` :contentReference[oaicite:0]{index=0}
 
 ---
 
-## 📁 Project Structure
+# 🔒 Password Validation
 
-```bash
-notes-keeper-app/
-│
-├── index.html
-├── style.css
-├── script.js
-├── assets/
-└── README.md
+Passwords must contain:
+- Minimum 8 characters
+- At least 1 uppercase letter
+- At least 1 lowercase letter
+- At least 1 number
+- At least 1 special character
+
+Example:
+```bash id="5u7r0p"
+Todo@123
